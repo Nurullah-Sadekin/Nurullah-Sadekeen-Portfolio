@@ -55,11 +55,11 @@ window.addEventListener('scroll', highlightNavigation);
 // Typing Animation
 const typingText = document.getElementById('typingText');
 const texts = [
-    'Full Stack Developer',
-    'Problem Solver',
-    'Tech Enthusiast',
-    'Code Artist',
-    'UI/UX Designer'
+    'Flutter Developer',
+    'Frontend Specialist',
+    'Mobile App Developer',
+    'UI/UX Enthusiast',
+    'Cross-Platform Expert'
 ];
 let textIndex = 0;
 let charIndex = 0;
@@ -485,7 +485,7 @@ window.addEventListener('load', () => {
 
 // Console Welcome Message
 console.log('%c👋 Welcome to Nurullah Sadekeen\'s Portfolio!', 'font-size: 20px; font-weight: bold; color: #6366f1;');
-console.log('%c💼 Full Stack Developer | Tech Enthusiast', 'font-size: 14px; color: #94a3b8;');
+console.log('%c📱 Flutter Developer | Frontend Specialist', 'font-size: 14px; color: #94a3b8;');
 console.log('%c🔗 GitHub: https://github.com/Nurullah-Sadekin', 'font-size: 12px; color: #8b5cf6;');
 console.log('%c📧 Looking to collaborate? Get in touch!', 'font-size: 12px; color: #10b981;');
 
