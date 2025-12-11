@@ -382,6 +382,18 @@ body {
     font-size: 8rem;
     color: white;
     border: 4px solid var(--bg-primary);
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-image i {
+    font-size: 8rem;
+    color: white;
 }
 
 .status-indicator {
