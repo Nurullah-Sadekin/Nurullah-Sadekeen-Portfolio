@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nurullah Sadekeen - Flutter Developer & Frontend Specialist Portfolio">
+    <meta name="keywords" content="Flutter Developer, Mobile Developer, Frontend Developer, UI/UX, Portfolio">
+    <meta name="author" content="Nurullah Sadekeen">
+    <title>Nurullah Sadekeen | Flutter & Frontend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home" class="logo">NS<span class="logo-dot">.</span></a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#languages" class="nav-link">Skills</a></li>
+                <li><a href="#contributions" class="nav-link">Contributions</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Nurullah Sadekeen</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="cursor">|</span>
+                    </p>
+                    <p class="hero-description">
+                        Flutter Developer & Frontend Specialist crafting beautiful, performant mobile and web applications. 
+                        Specialized in creating stunning user interfaces with Flutter and modern frontend technologies.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-code"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Nurullah-Sadekin" target="_blank" aria-label="GitHub" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nurullah-sadekeen/" target="_blank" aria-label="LinkedIn" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/nssowrov" target="_blank" aria-label="Twitter" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:nurullahsadekeen@gmail.com" aria-label="Email" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-image">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="status-indicator"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Flutter & Frontend Developer</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my background and expertise</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        I'm a passionate Flutter Developer and Frontend Specialist dedicated to creating beautiful, 
+                        high-performance mobile and web applications. With deep expertise in Flutter framework and 
+                        modern frontend technologies, I transform designs into seamless user experiences.
+                    </p>
+                    <p>
+                        My journey in mobile and frontend development has equipped me with a comprehensive skill set, 
+                        from building cross-platform apps with Flutter to crafting responsive web interfaces with React and Vue. 
+                        I specialize in creating pixel-perfect UIs, smooth animations, and delightful user interactions.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3 class="stat-number" data-target="49">0</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <h3 class="stat-number" data-target="40">0</h3>
+                            <p class="stat-label">Android Apps</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <h3 class="stat-number" data-target="30">0</h3>
+                            <p class="stat-label">iOS Apps</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <h3 class="stat-number" data-target="5">0</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Skills Section -->
+    <section id="languages" class="languages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and languages I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-mobile-alt"></i> Flutter Development
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-code"></i> Flutter / Dart
+                                </span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-fire"></i> Firebase / Cloud Services
+                                </span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-layer-group"></i> State Management (Bloc, Provider, Riverpod)
+                                </span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-plug"></i> REST API / GraphQL Integration
+                                </span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-paint-brush"></i> Custom Animations & UI
+                                </span>
+                                <span class="skill-percentage">94%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="94"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-store"></i> App Store & Publishing
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fab fa-google-play"></i> Google Play Console
+                                </span>
+                                <span class="skill-percentage">94%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="94"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fab fa-apple"></i> Apple App Store Connect
+                                </span>
+                                <span class="skill-percentage">91%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="91"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-certificate"></i> App Signing & Security
+                                </span>
+                                <span class="skill-percentage">89%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="89"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-chart-line"></i> App Analytics & ASO
+                                </span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-upload"></i> In-App Purchases & Billing
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i> Design & Tools
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-bezier-curve"></i> Figma / Adobe XD
+                                </span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fab fa-git-alt"></i> Git / GitHub / GitLab
+                                </span>
+                                <span class="skill-percentage">96%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="96"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fab fa-android"></i> Android Studio / Xcode
+                                </span>
+                                <span class="skill-percentage">89%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="89"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-vial"></i> Flutter Testing / Widget Tests
+                                </span>
+                                <span class="skill-percentage">87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-rocket"></i> CI/CD / App Distribution
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Contributions Section -->
+    <section id="contributions" class="contributions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">GitHub Contributions</h2>
+                <p class="section-subtitle">My coding activity over the past year</p>
+            </div>
+            <div class="contributions-wrapper">
+                <div class="contributions-header">
+                    <div class="contributions-stats">
+                        <div class="contrib-stat">
+                            <span class="contrib-number" id="totalContributions">0</span>
+                            <span class="contrib-label">contributions in the last year</span>
+                        </div>
+                    </div>
+                    <div class="contributions-legend">
+                        <span class="legend-label">Less</span>
+                        <div class="legend-colors">
+                            <span class="legend-color" data-level="0"></span>
+                            <span class="legend-color" data-level="1"></span>
+                            <span class="legend-color" data-level="2"></span>
+                            <span class="legend-color" data-level="3"></span>
+                            <span class="legend-color" data-level="4"></span>
+                        </div>
+                        <span class="legend-label">More</span>
+                    </div>
+                </div>
+                <div class="contributions-graph" id="contributionsGraph">
+                    <!-- GitHub-style contribution graph will be generated here -->
+                </div>
+                <div class="github-link">
+                    <a href="https://github.com/Nurullah-Sadekin" target="_blank" class="btn btn-github">
+                        <i class="fab fa-github"></i> View Full Profile on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop" alt="Sheba.xyz">
+                        <div class="project-overlay">
+                            <a href="https://play.google.com/store/apps/details?id=xyz.sheba.customersapp" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">🏡 Sheba.xyz - Home & Office Services</h3>
+                        <p class="project-description">
+                            Bangladesh's first and largest service platform for urban home and office services. 
+                            Connects users with expert, verified service providers for 150+ household services with seamless booking and secure payments.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Service Platform</span>
+                            <span class="tech-tag">Payment Gateway</span>
+                            <span class="tech-tag">Booking System</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop" alt="Sheba Pay">
+                        <div class="project-overlay">
+                            <a href="https://play.google.com/store/apps/details?id=xyz.sheba.customersapp" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">💳 Sheba Pay - FinTech Aggregator</h3>
+                        <p class="project-description">
+                            A comprehensive FinTech SDK aggregator integrated across Sheba products. 
+                            Seamlessly handles transactions for customers, companies, merchants, and employees within the ecosystem.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter SDK</span>
+                            <span class="tech-tag">FinTech</span>
+                            <span class="tech-tag">Payment Integration</span>
+                            <span class="tech-tag">Transaction Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop" alt="SPartner">
+                        <div class="project-overlay">
+                            <a href="https://play.google.com/store/apps/details?id=xyz.sheba.partner" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">💼 SPartner - Service Business Manager</h3>
+                        <p class="project-description">
+                            Business management tool for service provider companies (plumbing, electrical, catering, spa). 
+                            Manage multiple orders, track personnel, monitor business growth, and handle calculations efficiently.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Business Management</span>
+                            <span class="tech-tag">Order Tracking</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop" alt="Smanager">
+                        <div class="project-overlay">
+                            <a href="https://play.google.com/store/apps/details?id=xyz.sheba.managerapp" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">💼 Smanager - Inventory & Sales Manager</h3>
+                        <p class="project-description">
+                            Product management app for business owners to store stock information, manage buy/sell transactions, 
+                            track debit/credit, and handle collections via SMS integration.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Inventory Management</span>
+                            <span class="tech-tag">SMS Integration</span>
+                            <span class="tech-tag">Accounting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=500&fit=crop" alt="Shuttle">
+                        <div class="project-overlay">
+                            <a href="https://play.google.com/store/apps/details?id=com.easytransport.shuttle" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">🚗 Shuttle - Pick & Drop Service</h3>
+                        <p class="project-description">
+                            App-based shared ride transportation service for daily commute across Dhaka. 
+                            Schedule rides, select pickup/drop points, enjoy sedan cars at affordable prices. Includes partner app for drivers.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Maps Integration</span>
+                            <span class="tech-tag">Ride Sharing</span>
+                            <span class="tech-tag">Route Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=500&fit=crop" alt="Shuttle Partner App">
+                        <div class="project-overlay">
+                            <a href="https://play.google.com/store/apps/details?id=com.easytransport.shuttle.driver" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">🚗 Shuttle Partner - Driver App</h3>
+                        <p class="project-description">
+                            Driver companion app for Shuttle service. Earn reliable fixed income with easy trip management, 
+                            customer and route tracking, and smart tools to build a sustainable livelihood.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Driver Management</span>
+                            <span class="tech-tag">Route Tracking</span>
+                            <span class="tech-tag">Income Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>
+                        I'm currently available for freelance work and exciting opportunities. 
+                        Whether you have a project in mind or just want to chat about technology, 
+                        feel free to reach out.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:nurullahsadekeen@gmail.com">nurullahsadekeen@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Dhaka, Bangladesh (Remote Available)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+8801680119747">+880 168 011 9747</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Nurullah-Sadekin" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nurullah-sadekeen/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/nssowrov" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/8801680119747" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Nurullah Sadekeen</h3>
+                    <p>Flutter Developer | Frontend Specialist</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Nurullah-Sadekin" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nurullah-sadekeen/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/8801680119747" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nurullah Sadekeen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
