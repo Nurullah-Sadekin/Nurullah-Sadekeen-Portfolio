@@ -268,7 +268,7 @@ if (contributionsSection) {
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         const name = document.getElementById('name').value;
@@ -276,14 +276,46 @@ if (contactForm) {
         const subject = document.getElementById('subject').value;
         const message = document.getElementById('message').value;
         
-        // Here you would typically send the data to a backend
-        // For now, we'll just show a success message
+        // Telegram Bot Configuration
+        const TELEGRAM_BOT_TOKEN = '8271930090:AAFRvxm5jrVeiqGfbVllDIgd9FXtpTpBhIQ';
+        const TELEGRAM_CHAT_ID = '7003586095';
         
-        // Create success notification
-        showNotification(`Thank you, ${name}! Your message has been sent successfully. I'll get back to you soon!`, 'success');
+        // Format message for Telegram
+        const telegramMessage = `
+🔔 New Portfolio Contact Form Submission
+
+👤 Name: ${name}
+📧 Email: ${email}
+📋 Subject: ${subject}
+
+💬 Message:
+${message}
+        `;
         
-        // Reset form
-        contactForm.reset();
+        try {
+            // Send to Telegram
+            const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CHAT_ID,
+                    text: telegramMessage,
+                    parse_mode: 'HTML'
+                })
+            });
+            
+            if (response.ok) {
+                showNotification(`Thank you, ${name}! Your message has been sent successfully. I'll get back to you soon!`, 'success');
+                contactForm.reset();
+            } else {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            showNotification('Sorry, there was an error sending your message. Please try again or contact me directly.', 'error');
+            console.error('Error:', error);
+        }
     });
 }
 
